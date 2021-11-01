@@ -26,7 +26,7 @@ public class HomeController {
 	@CrossOrigin(origins = {"http://localhost:3000"})
 	@GetMapping(path = "/")
 	public List<HomePageEntity> getHomePageData(){
-		return this.homeService.findAll();
+		return this.homeService.getHomePageContent();
  
 	}
 	
